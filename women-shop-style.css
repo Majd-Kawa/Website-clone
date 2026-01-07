@@ -1,0 +1,697 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-navbar {
+    background-color: #2d2d2d; 
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 160px;
+    font-size: 12px;
+    position: relative;
+}
+
+.top-navbar-left{
+    align-items: center;
+}
+
+.top-navbar-left a {
+    color: #ffffff;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+    padding: 0px 20px;
+}
+
+#active {
+    background-color: #ffffff;
+    color: #2d2d2d;
+    border: 10px solid white;
+}
+
+.top-navbar-right {
+    align-items: center;
+    gap: 15px;
+}
+
+.account-navbar{
+    padding: 32px 160px;
+}
+
+.selected-region {
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#currentFlag {
+    width: 16px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.downward-arrow {
+    font-size: 8px;
+}
+
+.divider {
+    color: #444; 
+}
+
+.language {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+}
+
+.top-navbar a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+#active a:hover{
+    color: #2d2d2d;
+    text-decoration: underline;
+}
+
+#country-dropdown {
+    display: none;
+    position: absolute;
+    right: 120px;
+    background-color: white;
+    color: black;
+    width: 140px;
+    margin: 230px 46px 0px 0px;
+    box-shadow: 0 6px 8px rgba(0,0,0,.2);
+}
+
+#country-dropdown a{
+    text-decoration: none;
+    color: black;
+}
+
+#country-dropdown div {
+    padding: 6px;
+    cursor: pointer;
+    align-items: center;
+}
+
+#country-dropdown img {
+    width: 16px;
+    margin: 6px 18px 4px 12px;
+}
+
+nav {
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0px 35px;
+    padding: 24px 16px;
+}
+
+.left-navbar {
+    flex: 1; 
+}
+
+.search-container {
+    align-items: center;
+    border-bottom: 1px solid #000; 
+    width: 260px;
+    padding-bottom: 5px;
+}
+
+.search-container input {
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    color: lightslategray;
+    width: 320px;
+    outline: 0px; 
+}
+
+.search-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo{
+    letter-spacing: 4px;
+}
+
+.navbar-center {
+    text-align: center;
+}
+
+.navbar-center a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 8px; 
+    font-weight: 400;
+}
+
+.slogan {
+    margin: 2px 0 0 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.right-navbar {
+    gap: 25px; 
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 7px;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    cursor: pointer;
+}
+
+.account-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.account-item span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.account-item :hover{
+    text-decoration: underline;
+}
+
+main{
+    margin: 0px auto;
+    padding: 0px 16px;
+    max-width: 1200px;
+}
+
+.option-nav{
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 12px;
+}
+
+.option-nav li{
+    list-style: none;
+}
+
+.option-nav li a{
+    text-decoration: none;
+    font-family: 'NunitoSans', sans-serif, monospace;
+    font-size: 12px;
+    color: #000;
+    gap: 20px;
+}
+
+#activated{
+    color: darkgray;
+}
+
+.option-nav :hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.info-banner {
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 0px;
+    border-top: 1px solid #e4e4e4; 
+    cursor: pointer;
+}
+
+.info-item {
+    align-items: center;
+    gap: 10px; 
+}
+
+.info-item img {
+    width: 24px; 
+}
+
+.info-item span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+}
+
+.sale-box{
+    text-align: center;
+    margin: 16px 0px 0px 0px;
+    padding: 48px 0px;
+    background-image: url(./images/sale.jpg);
+    background-position: center;
+    background-size: 100%;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sale-box h3{
+    font-size: 2rem;
+    color: white;
+}
+
+.sale-box h2{
+    font-size: 4rem;
+    color: white;
+}
+
+.sale-box a{
+    color: white;
+    font-weight: bold;
+}
+
+.season-box ,.brand{
+    margin-top: 40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.season-box{
+    padding: 265px 64px;
+    background-image: url(./images/main-women.jpg);
+}
+
+.right-side ,.brand-right-side{
+    width: 310px;
+}
+
+.right-side a, .brand-right-side a, .trending-wedding a, .trending-bridal a{
+    color: black;
+    font-weight: bold;
+}
+
+.season-box h4, .brand h4{ 
+    font-size: 3rem;
+}
+
+.season-box-options {
+    margin: 40px 0px 0px 0px;
+    justify-content: space-between;
+}
+
+.option-image{
+    position: relative;
+}
+
+.option-title{
+    position: absolute;
+    bottom: 24px;
+    left: 40%;
+    color: #b2a497;
+}
+
+.brand{
+    background-image: url(./images/brand.jpg);
+    padding: 240px 64px;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    align-items: center;
+    width: 1200px;
+    margin: 24px 0px 40px;
+}
+
+.slider-viewport{
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider{
+    gap: 30px;
+    transition: transform 0.4s ease;
+}
+
+.card{
+    min-width: 175px;
+    flex-shrink: 0;
+}
+
+.card-image{
+    position: relative;
+}
+
+.card-image img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    cursor: pointer;
+    margin: 0px 0px 12px;
+}
+
+.card p{
+    text-align: center;
+    margin: 0px;
+}
+
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 28px;
+    transition: transform 0.2s ease, color 0,2s ease;
+}
+
+.heart:hover{
+    transform: scale(1.5);
+}
+
+.heart.active {
+    color: #c8a35a;
+}
+
+.styles h4, .option-image h4{
+    font-size: 2rem;
+}
+
+.arrow{
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.brand-name{
+    font-weight: bold;
+}
+
+.price{
+    color: #c37453;
+}
+
+.trend{
+    justify-content: space-between;
+    margin: 64px 0px;
+}
+
+.trending-wedding, .trending-bridal{
+    position: relative;
+}
+
+.trending-wedding-content, .trending-bridal-content{
+    position: absolute;
+    bottom: 64px;
+    left: 64px;
+    width: 425px;
+    text-align: center;
+}
+
+.trends h4{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.trending-wedding-content p, .trending-bridal-content p{
+    padding: 12px 0px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 160px;
+}
+
+.top-footer {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 0px 0px 40px 0px;
+    border-bottom: 1px solid #454545;
+}
+
+.newsletter h4, .socials h4 {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.subscribe-form {
+    gap: 8px;
+}
+
+.subscribe-form input {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 12px;
+    color: white;
+    padding: 10px 15px;
+    width: 300px;
+}
+
+.subscribe-form button {
+    background-color: #ccc;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+}
+
+.social-icons{
+    gap: 28px;
+}
+
+
+.socials h4{
+    text-align: right;
+}
+
+.social-icons img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.footer-links-container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #454545;
+}
+
+.footer-column h5 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer-column a{
+    color: white;
+    text-decoration: none;
+}
+
+.extra-margin {
+    margin-top: 30px 
+}
+
+.app-links img {
+    width: 140px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-column img{
+    height: 38px;
+    width: 120px;
+    cursor: pointer;
+    margin-right: 75px;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark a {
+    color: #f1f1f1;
+}
+
+body.dark .top-navbar {
+    background-color: #000;
+}
+
+body.dark nav, body.dark .info-item span, body.dark .option-nav a {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark .card {
+    background-color: #1e1e1e;
+}
+
+body.dark .price {
+    color: #c8a35a;
+}
+
+body.dark .info-banner {
+    border-top: 1px solid #333;
+}
+
+body.dark footer {
+    background-color: #000;
+}
+
+body.dark input, body.dark .slogan{
+    background-color: #1e1e1e;
+    color: white;
+    border-color: #333;
+}
+
+.dark-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark nav img,
+body.dark .info-item img,
+body.dark .account-item img,
+body.dark .search-container img,
+body.dark footer img {
+    filter: invert(1) brightness(1.2);
+}
+
+@media (max-width: 768px) {
+    .trending-wedding-content,
+    .trending-bridal-content {
+        position: static;
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .arrow {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .top-navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-navbar,
+    .right-navbar {
+        justify-content: center;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+
+    .option-nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .sale-box h2 {
+        font-size: 2rem;
+    }
+
+    .season-box,
+    .brand {
+        flex-direction: column;
+        padding: 120px 20px;
+        text-align: center;
+    }
+
+    .right-side,
+    .brand-right-side {
+        width: 100%;
+    }
+
+    .season-box-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .card {
+        min-width: 240px;
+    }
+
+    .trend {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .top-footer,
+    .footer-links-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .socials h4 {
+        text-align: left;
+    }
+}
