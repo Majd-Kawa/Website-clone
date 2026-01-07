@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ounass</title>
+    <link rel="stylesheet" href="./women-shop-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-navbar flex">
+            <div class="top-navbar-left flex">
+                <a href="#" id="active">WOMEN</a>
+                <a href="#">MEN</a>
+                <a href="#">KIDS</a>
+            </div>
+            <div class="top-navbar-right flex">
+                <div class="selected-region flex" onmouseover="showDropdown()">
+                    <img src="./images/flags/qatar.png" alt="Qatar flag" id="currentFlag">
+                    <span id="currentCountry">Qatar</span>
+                    <span class="downward-arrow">▼</span>
+                </div>
+                <span class="divider">|</span>
+                <a href="#" class="language">العربية</a>
+            </div>
+            <div id="country-dropdown" class="flex">
+                <div onclick="selectCountry('UAE','./images/flags/UAE.png')">
+                    <img src="./images/flags/UAE.png" alt="UAE flag"><span><a href="#">UAE</a></span>
+                </div>
+                <div onclick="selectCountry('Saudi Arabia','./images/flags/saudi-arabia.png')">
+                    <img src="./images/flags/saudi-arabia.png" alt="Saudi Arabia flag"><span><a href="#">Saudi
+                            Arabia</a></span>
+                </div>
+                <div onclick="selectCountry('Oman','./images/flags/oman.png')">
+                    <img src="./images/flags/oman.png" alt="Oman flag"><span><a href="#">Oman</a></span>
+                </div>
+                <div onclick="selectCountry('Kuwait','./images/flags/kuwait.png')">
+                    <img src="./images/flags/kuwait.png" alt="Kuwait flag"><span><a href="#">Kuwait</a></span>
+                </div>
+                <div onclick="selectCountry('Bahrain','./images/flags/bahrain.png')">
+                    <img src="./images/flags/bahrain.png" alt="Bahrain flag"><span><a href="#">Bahrain</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="account-navbar flex">
+        <div class="left-navbar">
+            <div class="search-container flex">
+                <img src="./images/logos/search-interface-symbol.png" alt="search icon">
+                <input type="text" placeholder="Search designer or product">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <h1 class="logo"><a href="#">OUNASS</a></h1>
+            <p class="slogan">THE DEFINITIVE HOME OF LUXURY</p>
+        </div>
+        <div class="right-navbar flex">
+            <button class="dark-toggle" onclick="document.body.classList.toggle('dark')">
+                🌙
+            </button>
+            <div class="account-item">
+                <img src="./images/logos/user.png" alt="user icon">
+                <span>Account</span>
+            </div>
+            <div class="account-item">
+                <img src="./images/logos/wishlist.png" alt="wishlist icon">
+                <span>Wishlist (0)</span>
+            </div>
+            <div class="account-item">
+                <img src="./images/logos/parcel.png" alt="bag icon">
+                <span>Bag (0)</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <UL class="flex option-nav" id="nav-font">
+                <li><a href="#" id="activated">SALE</a></li>
+                <li><a href="#">NEW IN</a></li>
+                <li><a href="#">DESIGNERS</a></li>
+                <li><a href="#">CLOTHING</a></li>
+                <li><a href="#">SHOES</a></li>
+                <li><a href="#">BAGS</a></li>
+                <li><a href="#">BEAUTY</a></li>
+                <li><a href="#">JEWELLERY & WATCHES</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">GIFTS</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">THE EDITS</a></li>
+                <li><a href="#">PRE-LOVED</a></li>
+            </UL>
+        </div>
+
+        <section class="info-banner flex">
+            <div class="info-item flex">
+                <img src="./images/logos/shipping.png" alt="Shipping icon">
+                <span>FREE SHIPPING* AND SEAMLESS RETURNS*</span>
+            </div>
+            <div class="info-item flex">
+                <img src="./images/logos/gift.png" alt="Gift icon">
+                <span>FREE GIFT PACKAGING</span>
+            </div>
+            <div class="info-item flex">
+                <img src="./images/logos/apple-pay.png" alt="Apple Pay icon">
+                <span>GO SEAMLESS WITH APPLE PAY</span>
+            </div>
+        </section>
+        <section class="flex-column">
+            <div class="sale-box">
+                <h3>END OF SEASON SALE</h3>
+                <h2>UP TO 60% OFF</h2>
+                <p><a href="#">SHOP NOW</a></p>
+            </div>
+            <div class="season-box flex">
+                <div>
+                    <h4>NEWNESS</h4>
+                    <h4>IS IN THE AIR</h4>
+                </div>
+                <div class="right-side">
+                    <p>From debut designers to new season styles, presenting the latest additions redefining the season
+                        ahead</p>
+                    <p><a href="#">SHOP THE EDIT</a></p>
+                </div>
+            </div>
+            <div class="season-box-options flex">
+                <div class="option-image">
+                    <a href="#"><img src="./images/dresses.jpg" alt="dresse image"></a>
+                    <h4 class="option-title">Dresses</h4>
+                </div>
+                <div class="option-image">
+                    <a href="#"><img src="./images/heels.jpg" alt="heel image"></a>
+                    <h4 class="option-title">Heels</h4>
+                </div>
+                <div class="option-image">
+                    <a href="#"><img src="./images/accessories.jpg" alt="accessories image"></a>
+                    <h4 class="option-title">Accessories</h4>
+                </div>
+            </div>
+            <div class="flex brand">
+                <div>
+                    <h4>PIAGET</h4>
+                    <h4>ON OUNASS</h4>
+                </div>
+                <div class="brand-right-side">
+                    <p>Discover the Swiss Maison's world of exquisite timpieces and jewellery, where gold craftsmanship
+                        meets enduring arristry</p>
+                    <p><a href="#">SHOP THE BRAND</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="styles">
+            <h4>Must-Have Styles</h4>
+            <div class="slider-container flex">
+                <button class="arrow" onclick="slide(-1)">&lt;</button>
+                <div class="slider-viewport">
+                    <div class="slider flex" id="slider">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/front-black-dress.png" alt="front black dress image"
+                                        data-front="./images/front-black-dress.png"
+                                        data-back="./images/back-black-dress.png" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">SANDRO</p>
+                            <p>Black Maxi Dress</p>
+                            <p class="price">1,990 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/lace-heels-top.png" alt="black lace heels image"
+                                        data-front="./images/lace-heels-top.png"
+                                        data-back="./images/lace-heels-side.png" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">MANOLO BLAHNIK</p>
+                            <p>Black Lace Heels</p>
+                            <p class="price">3,600 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/front-pink-dress.png" alt="front pink dress image"
+                                        data-front="./images/front-pink-dress.png"
+                                        data-back="./images/back-pink-dress.png" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">MISSONI</p>
+                            <p>Pink Maxi dress</p>
+                            <p class="price">4,400 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/bag.png" alt="bag image" data-front="./images/bag.png"
+                                        data-back="./images/holding-the-bag.png" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">STELLA MCCARTNEY</p>
+                            <p>Formal Cross-bag</p>
+                            <p class="price">3,050 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/flower-earing.jpg" alt="flower earing image"
+                                        data-front="./images/flower-earing.jpg"
+                                        data-back="./images/flower-earing-ear.jpg" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">SANDRO</p>
+                            <p>Gold Flower Earings</p>
+                            <p class="price">1,990 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/black-leather-heels-side.png" alt="black heels image"
+                                        data-front="./images/black-leather-heels-side.png"
+                                        data-back="./images/black-leather-heels.png" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">MALONE SOULIERS</p>
+                            <p>Leather Black Heels</p>
+                            <p class="price">2,750 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/red-dress.jpg" alt="red dress image"
+                                        data-front="./images/red-dress.jpg" data-back="./images/back-red-dress.jpg"
+                                        onmouseover="swapImage(this)" onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">MISSONI</p>
+                            <p>Red Maxi Dress</p>
+                            <p class="price">6,750 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/front-black-dress.png" alt="front black dress image"
+                                        data-front="./images/front-black-dress.png"
+                                        data-back="./images/back-black-dress.png" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">SANDRO</p>
+                            <p>Black Maxi Dress</p>
+                            <p class="price">2,990 QAR</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="#"><img src="./images/lace-heels-top.png" alt="black lace heels image"
+                                        data-front="./images/lace-heels-top.png"
+                                        data-back="./images/lace-heels-side.png" onmouseover="swapImage(this)"
+                                        onmouseout="swapBack(this)"></a>
+                                <span class="heart" onclick="toggleHeart(this)">♡</span>
+                            </div>
+                            <p class="brand-name">MANOLO BLAHNIK</p>
+                            <p>Black Lace Heels</p>
+                            <p class="price">3,600 QAR</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow" onclick="slide(1)">&gt;</button>
+            </div>
+        </section>
+        <section class="trends">
+            <h4>Trending This Week</h4>
+            <div class="trend flex">
+                <div class="trending-wedding">
+                    <a href="#"><img src="./images/wedding-season.jpg" alt="wedding season image"></a>
+                    <div class="trending-wedding-content">
+                        <h4>WEDDING SEASON READY</h4>
+                        <p>Elegance curated for every invitation - discover styles defined by graceful lines, subtle
+                            drama, and timeless appeal</p>
+                        <a href="#">SHOP THE EDIT</a>
+                    </div>
+                </div>
+                <div class="trending-bridal">
+                    <a href="#"><img src="./images/bridal-story.jpg" alt="bridal image"></a>
+                    <div class="trending-bridal-content">
+                        <h4>A BRIDAL STORY</h4>
+                        <p>Discover contemporary gowns and elegant accents crafted for every unforgettable moment</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="top-footer flex">
+            <div class="newsletter">
+                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                <div class="subscribe-form flex">
+                    <input type="email" placeholder="Enter your email address here">
+                    <button type="button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="socials">
+                <h4>FOLLOW OUNASS</h4>
+                <div class="social-icons flex">
+                    <a href="#" target="_blank"><img src="./images/logos/facebook.png" alt="Facebook icon"></a>
+                    <a href="#" target="_blank"><img src="./images/logos/twitter.png" alt="X icon"></a>
+                    <a href="#" target="_blank"><img src="./images/logos/instagram.png" alt="Instagram icon"></a>
+                    <a href="#" target="_blank"><img src="./images/logos/whatsapp.png" alt="WhatsApp icon"></a>
+                    <a href="#" target="_blank"><img src="./images/logos/linkidin.png" alt="LinkedIn icon"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links-container flex">
+            <div class="footer-column">
+                <h5>Top Brands</h5>
+                <ul>
+                    <li><a href="#">NASS</a></li>
+                    <li><a href="#">Dolce & Gabbana</a></li>
+                    <li><a href="#">Valentino Garavani</a></li>
+                    <li><a href="#">Saint Laurent</a></li>
+                    <li><a href="#">Bottega Veneta</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Top Categories</h5>
+                <ul>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Customer Care</h5>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+                <h5 class="extra-margin">About Us</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy & Cookies Policy</a></li>
+                    <li><a href="#">Price Match</a></li>
+                </ul>
+                <h5 class="extra-margin">Shipping & Returns</h5>
+                <ul>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Online Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column app-links">
+                <h5>Ounass Apps</h5>
+                <img src="./images/logos/app-store.jpg" alt="App Store logo">
+                <img src="./images/logos/google-play.jpg" alt="Google Play logo">
+            </div>
+    </footer>
+    <script src="./women-shop-script.js"></script>
+</body>
+
+</html>
